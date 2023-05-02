@@ -50,8 +50,6 @@ public class WorldScrolling : MonoBehaviour
                 int tileToUpdateX = CalculatePositionOnAxis(playerTilePosition.x + povX, true);
                 int tileToUpdateY = CalculatePositionOnAxis (playerTilePosition.y + povY, false);
 
-                Debug.Log("tileToUpdateX:" + tileToUpdateX + "  tileToUpdateY:" + tileToUpdateY);
-
                 GameObject tile = terrainTiles[tileToUpdateX, tileToUpdateY];
                 tile.transform.position = CalculatePosition(playerTilePosition.x + povX, playerTilePosition.y + povY);
             }
