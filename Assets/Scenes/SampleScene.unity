@@ -1539,7 +1539,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &656171227
 Transform:
   m_ObjectHideFlags: 0
@@ -2687,7 +2687,7 @@ Rigidbody2D:
   m_Interpolate: 1
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &1125208777
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2714,6 +2714,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f3709e2f3ed45e46b9aaa4934e1b688, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxHp: 1000
+  currentHp: 1000
 --- !u!61 &1125208779
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4936,7 +4938,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 878957795727202328, guid: 2ef16490144726944b14f142d3ffd1e7, type: 3}
       propertyPath: speed
-      value: 0
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 878957795727202328, guid: 2ef16490144726944b14f142d3ffd1e7, type: 3}
+      propertyPath: damage
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 878957795727202328, guid: 2ef16490144726944b14f142d3ffd1e7, type: 3}
       propertyPath: targetDestination
