@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    [SerializeField] Transform targetDestination;
+    Transform targetDestination;
     [SerializeField] float speed;
     [SerializeField] int hp = 999;
     [SerializeField] int damage = 1;
@@ -19,7 +19,12 @@ public class Enemy : MonoBehaviour
     private void Awake()
     {
         rigidBody2d = GetComponent<Rigidbody2D>();
-        targetGameObject = targetDestination.gameObject;
+    }
+
+    public void SetTarget(GameObject target)
+    {
+        targetGameObject = target;
+        targetDestination = target.transform;
     }
 
     private void FixedUpdate()

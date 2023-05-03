@@ -134,7 +134,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &878957795727202328
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -147,8 +147,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc3ea7163fc3a814c8cfeae8ce3f2082, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetDestination: {fileID: 0}
   speed: 2
+  hp: 999
+  damage: 1
 --- !u!95 &878957795727202333
 Animator:
   serializedVersion: 5
