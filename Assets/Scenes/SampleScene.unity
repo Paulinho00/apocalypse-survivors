@@ -345,8 +345,6 @@ GameObject:
   - component: {fileID: 159399760}
   - component: {fileID: 159399761}
   - component: {fileID: 159399762}
-  - component: {fileID: 159399764}
-  - component: {fileID: 159399763}
   m_Layer: 0
   m_Name: WhipAttack
   m_TagString: Untagged
@@ -433,44 +431,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4e21bcef0d011a45a9b3f92fc292b86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &159399763
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 159399759}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62b78f1a94baf5644bfdec243e2ea185, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!61 &159399764
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 159399759}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 3, y: 1}
-    newSize: {x: 0.96, y: 0.32}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 3, y: 1}
-  m_EdgeRadius: 0
 --- !u!4 &197541333 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5228727295163768823, guid: c1b39364d011e8049bf22231a532502b, type: 3}
@@ -2351,8 +2311,6 @@ GameObject:
   - component: {fileID: 954037839}
   - component: {fileID: 954037840}
   - component: {fileID: 954037841}
-  - component: {fileID: 954037843}
-  - component: {fileID: 954037842}
   m_Layer: 0
   m_Name: WhipAttack (1)
   m_TagString: Untagged
@@ -2439,44 +2397,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4e21bcef0d011a45a9b3f92fc292b86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &954037842
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 954037838}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62b78f1a94baf5644bfdec243e2ea185, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!61 &954037843
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 954037838}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 3, y: 1}
-    newSize: {x: 3, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 3, y: 1}
-  m_EdgeRadius: 0
 --- !u!4 &966618169 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4074069103142048375, guid: f1e1c3f29eb70f742a7665173c235ce8, type: 3}
