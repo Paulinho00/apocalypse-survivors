@@ -11,6 +11,7 @@ public class Enemy : MonoBehaviour, IDamageable
     [SerializeField] int damage = 1;
     GameObject targetGameObject;
 
+    [SerializeField] int expierenceReward = 400;
 
 
     Character targetCharacter;
@@ -57,6 +58,7 @@ public class Enemy : MonoBehaviour, IDamageable
 
         if(hp < 1)
         {
+            targetGameObject.GetComponent<Level>().AddExpierence(expierenceReward);
             Destroy(gameObject);
         }
     }
