@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Character : MonoBehaviour
@@ -7,6 +8,15 @@ public class Character : MonoBehaviour
     public int maxHp = 1000;
     public int currentHp = 1000;
     [SerializeField] HealthBar healthBar;
+
+    [HideInInspector] public Level level;
+    [HideInInspector] public Coins coins;
+
+    private void Awake()
+    {
+        level = GetComponent<Level>();
+        coins = GetComponent<Coins>();
+    }
 
     private void Start()
     {

@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 878957795727202329}
   - component: {fileID: 878957795727202328}
   - component: {fileID: 878957795727202333}
+  - component: {fileID: -1626779046479301074}
   m_Layer: 0
   m_Name: EnemyBat
   m_TagString: Untagged
@@ -150,6 +151,7 @@ MonoBehaviour:
   speed: 2
   hp: 2
   damage: 1
+  expierenceReward: 400
 --- !u!95 &878957795727202333
 Animator:
   serializedVersion: 5
@@ -171,3 +173,17 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &-1626779046479301074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 878957795727202331}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1ede3cb46ce85047835f44f0ae82ea3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dropItemObject: {fileID: 6658205692169211439, guid: 365b141516661694aa25bb143a84bafb, type: 3}
+  chance: 0.15
