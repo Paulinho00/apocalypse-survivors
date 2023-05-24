@@ -39,7 +39,6 @@ public class ThrowingDaggerProjectile : MonoBehaviour
                     hitDetected = true;
                     break;
                 }
-                Debug.Log(hitDetected);
                 if (hitDetected == true)
                     Destroy(gameObject);
             }
