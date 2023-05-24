@@ -5,6 +5,7 @@ public class StartGame : MonoBehaviour
 {
     public void StartGameplay()
     {
-        SceneManager.LoadScene("GameplayStage");
+        SceneManager.LoadScene("Essential", LoadSceneMode.Single);
+        SceneManager.LoadScene("GameplayStage", LoadSceneMode.Additive);
     }
 }
