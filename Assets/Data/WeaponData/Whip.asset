@@ -9,8 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ffbb0cd2a8876ce4f8097409f5b75188, type: 3}
-  m_Name: Item
+  m_Script: {fileID: 11500000, guid: e36368f567389cf45aa3aa46da242f40, type: 3}
+  m_Name: Whip
   m_EditorClassIdentifier: 
-  Name: Armor
-  armor: 10
+  Name: Whip
+  stats:
+    damage: 100
+    timeToAttack: 3
+  weaponBasePrefab: {fileID: 6718951323078232807, guid: e392aa091535a5c48b2aee571cd7f658, type: 3}
