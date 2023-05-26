@@ -8,7 +8,12 @@ public enum UpgradeType
     ItemUnlock
 }
 
+[CreateAssetMenu]
 public class UpgradeData : ScriptableObject
 {
-    UpgradeType upgradeType;
+    public UpgradeType upgradeType;
+    public string Name;
+    public Sprite icon;
+
+    public WeaponData weaponData;
 }
