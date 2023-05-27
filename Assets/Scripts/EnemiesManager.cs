@@ -10,24 +10,12 @@ public class EnemiesManager : MonoBehaviour
     [SerializeField] float spawnTimer;
     GameObject playerTransform;
 
-    float timer;
-
     private void Start()
     {
         playerTransform = GameManager.instance.playerTransform.gameObject;
     }
 
-    private void Update()
-    {
-        timer -= Time.deltaTime;
-        if(timer < 0f)
-        {
-            SpawnEnemy();
-            timer = spawnTimer;
-        }
-    }
-
-    private void SpawnEnemy()
+    public void SpawnEnemy()
     {
         Debug.Log("HALO");
         Vector3 position = GeneratePosition();

@@ -2792,7 +2792,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1438262024}
-  - component: {fileID: 1438262023}
+  - component: {fileID: 1438262025}
+  - component: {fileID: 1438262026}
+  - component: {fileID: 1438262027}
   m_Layer: 0
   m_Name: World
   m_TagString: Untagged
@@ -2800,24 +2802,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1438262023
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1438262022}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 91956ddda482e434089d4c652c588555, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerTilePosition: {x: 0, y: 0}
-  tileSize: 20
-  terrainTileHorizontalCount: 3
-  terrainTileVerticalCount: 3
-  fieldOfVisionHeight: 3
-  fieldOfVisionWidth: 3
 --- !u!4 &1438262024
 Transform:
   m_ObjectHideFlags: 0
@@ -2842,6 +2826,51 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1438262025
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1438262022}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91956ddda482e434089d4c652c588555, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerTilePosition: {x: 0, y: 0}
+  tileSize: 20
+  terrainTileHorizontalCount: 3
+  terrainTileVerticalCount: 3
+  fieldOfVisionHeight: 3
+  fieldOfVisionWidth: 3
+--- !u!114 &1438262026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1438262022}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cc82e9e3297e784ea554826fc2d3b46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  time: 0
+--- !u!114 &1438262027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1438262022}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e6ea69b5c314ce47bb507d57d0ecff1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stageData: {fileID: 11400000, guid: 4bcca44998c965c48861712c2c0fbb7b, type: 2}
+  enemiesManager: {fileID: 655438402}
 --- !u!4 &1462236879 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1408146410660583339, guid: c92a000ae11810f45a219a8e11bc958a, type: 3}
