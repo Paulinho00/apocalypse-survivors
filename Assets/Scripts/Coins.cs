@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class Coins : MonoBehaviour
 {
-    public int coinAcquired;
-
+    [SerializeField] DataContainer data;
+    
     public void Add(int count)
     {
-        coinAcquired += count;
+        data.coins += count;
     }
 }

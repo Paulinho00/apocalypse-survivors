@@ -2519,7 +2519,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4f6ef98b8f1bf4488c8d765b6d243c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coinAcquired: 0
+  data: {fileID: 11400000, guid: 7621c2b1efb25d94f8ba420522548ee1, type: 2}
 --- !u!114 &1125208782
 MonoBehaviour:
   m_ObjectHideFlags: 0
