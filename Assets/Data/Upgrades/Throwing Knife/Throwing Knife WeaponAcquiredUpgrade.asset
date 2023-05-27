@@ -13,6 +13,9 @@ MonoBehaviour:
   m_Name: Throwing Knife WeaponAcquiredUpgrade
   m_EditorClassIdentifier: 
   upgradeType: 2
-  Name: Throwing Dagger
+  Name: Throwing Knife (Weapon Unlock)
   icon: {fileID: 21300000, guid: f8583c6aabc73954e929584194965ca5, type: 3}
   weaponData: {fileID: 11400000, guid: 4fe59699319239c4dbd06b88d5dbac84, type: 2}
+  weaponStats:
+    damage: 0
+    timeToAttack: 0

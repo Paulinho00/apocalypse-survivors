@@ -10,9 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0d58c40370ae5164294fc5198c0cab81, type: 3}
-  m_Name: Throwing Knife (Sharp Knife)
+  m_Name: Whip Upgrade (Fast Attack)
   m_EditorClassIdentifier: 
   upgradeType: 0
-  Name: Sharp Knife
-  icon: {fileID: 21300000, guid: 537feac4c760eea44bafbfe25117dabb, type: 3}
-  weaponData: {fileID: 0}
+  Name: Whip (Fast Attack)
+  icon: {fileID: 21300000, guid: 70872f7b7e491bd4b917ea1a6ee396bd, type: 3}
+  weaponData: {fileID: 11400000, guid: 2ca201f1850b4c9479966a60d4875d4d, type: 2}
+  weaponUpgradeStats:
+    damage: 0
+    timeToAttack: -1
