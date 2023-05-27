@@ -44,5 +44,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86bf96aec9ff91f4785eef9ce1356c03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeToAttack: 1.5
+  weaponData: {fileID: 0}
+  weaponStats:
+    damage: 0
+    timeToAttack: 0
+    numberOfAttacks: 0
   knifePrefab: {fileID: 8918794074391722074, guid: 8e07f82786e172d4f9710262724857a4, type: 3}
+  spread: 0.5

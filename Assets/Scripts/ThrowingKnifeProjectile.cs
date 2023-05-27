@@ -1,11 +1,13 @@
 using UnityEngine;
 
-public class ThrowingDaggerProjectile : MonoBehaviour
+public class ThrowingKnifeProjectile : MonoBehaviour
 {
     Vector3 direction;
     [SerializeField] float speed;
     public int damage = 5;
     bool hitDetected = false;
+
+    float ttl = 6f;
 
     public void SetDirection(float dir_x, float dir_y)
     {
@@ -42,6 +44,12 @@ public class ThrowingDaggerProjectile : MonoBehaviour
                 if (hitDetected == true)
                     Destroy(gameObject);
             }
+        }
+
+        ttl -= Time.deltaTime;
+        if(ttl < 0f)
+        {
+            Destroy(gameObject);
         }
     }
 }
