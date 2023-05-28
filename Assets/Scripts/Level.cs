@@ -1,7 +1,10 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Data;
+using Unity.Mathematics;
 using UnityEngine;
+using static UnityEngine.Rendering.VolumeComponent;
 using Random = UnityEngine.Random;
 
 public class Level : MonoBehaviour
@@ -14,8 +17,10 @@ public class Level : MonoBehaviour
     [SerializeField] List<UpgradeData> upgrades;
     List<UpgradeData> selectedUpgrades;
     [SerializeField] List<UpgradeData> acquiredUpgrades;
+    [SerializeField] List<UpgradeData> upgradesAvailableOnStart;
 
     WeaponManager weaponManager;
+    PassiveItems passiveItems;
 
     int expToLevelUp
     {
@@ -28,6 +33,8 @@ public class Level : MonoBehaviour
     private void Awake()
     {
         weaponManager = GetComponent<WeaponManager>();
+        passiveItems = GetComponent<PassiveItems>();
+        AddUpgradesIntoTheListOfAvaibleUpgrades(upgradesAvailableOnStart);
     }
 
     private void Start()
@@ -56,11 +63,14 @@ public class Level : MonoBehaviour
                 weaponManager.UpgradeWeapon(upgradeData);
                 break;
             case UpgradeType.ItemUpgrade:
+                passiveItems.UpgradeItem(upgradeData);
                 break;
-            case UpgradeType.WeaponUnlock:
+            case UpgradeType.WeaponGet:
                 weaponManager.AddWeapon(upgradeData.weaponData);
                 break;
-            case UpgradeType.ItemUnlock:
+            case UpgradeType.ItemGet:
+                passiveItems.Equip(upgradeData.item);
+                AddUpgradesIntoTheListOfAvaibleUpgrades(upgradeData.item.upgrades);
                 break;
         }
 
@@ -96,14 +106,28 @@ public class Level : MonoBehaviour
         if(count > upgrades.Count)
             count = upgrades.Count;
 
-        for(int i = 0; i < count; i++)
-            upgradeList.Add(upgrades[Random.Range(0, upgrades.Count)]);
+        System.Random random = new System.Random();
+        List<int> selectedIndices = new List<int>();
+
+        while (selectedIndices.Count < count)
+        {
+            int randomIndex = random.Next(0, upgrades.Count);
+
+            if (!selectedIndices.Contains(randomIndex))
+                selectedIndices.Add(randomIndex);
+        }
+
+        for (int i = 0; i < count; i++)
+            upgradeList.Add(upgrades[selectedIndices[i]]);
 
         return upgradeList;
     }
 
     internal void AddUpgradesIntoTheListOfAvaibleUpgrades(List<UpgradeData> upgradesToAdd)
     {
+        if (upgradesToAdd == null)
+            return;
+
         this.upgrades.AddRange(upgradesToAdd);
     }
 }

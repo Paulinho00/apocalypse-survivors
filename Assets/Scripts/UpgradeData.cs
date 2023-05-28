@@ -4,8 +4,8 @@ public enum UpgradeType
 {
     WeaponUpgrade,
     ItemUpgrade,
-    WeaponUnlock,
-    ItemUnlock
+    WeaponGet,
+    ItemGet
 }
 
 [CreateAssetMenu]
@@ -17,4 +17,7 @@ public class UpgradeData : ScriptableObject
 
     public WeaponData weaponData;
     public WeaponStats weaponUpgradeStats;
+
+    public Item item;
+    public ItemStats itemStats;
 }

@@ -10,7 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ffbb0cd2a8876ce4f8097409f5b75188, type: 3}
-  m_Name: Armor
+  m_Name: Pummarola
   m_EditorClassIdentifier: 
-  Name: Armor
-  armor: 10
+  Name: Pummarola
+  stats:
+    armor: 0
+    regenerationRate: 1

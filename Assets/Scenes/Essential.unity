@@ -2459,7 +2459,7 @@ MonoBehaviour:
   maxHp: 1000
   currentHp: 1000
   armor: 0
-  hpRegenerationRate: 1
+  hpRegenerationRate: 0
   hpRegenerationTimer: 0
   healthBar: {fileID: 291357996}
   level: {fileID: 0}
@@ -2504,9 +2504,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   expierenceBar: {fileID: 1874579769}
   upgradePanel: {fileID: 1570743299}
-  upgrades:
-  - {fileID: 11400000, guid: 4dc87a94bb92662448c881a71d3bf26b, type: 2}
+  upgrades: []
   acquiredUpgrades: []
+  upgradesAvailableOnStart:
+  - {fileID: 11400000, guid: fdf0d509bc530bb4aae2541957d252cb, type: 2}
+  - {fileID: 11400000, guid: 413e69e6a7ad206428d4d057b2fe953e, type: 2}
+  - {fileID: 11400000, guid: 4dc87a94bb92662448c881a71d3bf26b, type: 2}
 --- !u!114 &1125208781
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2527,13 +2530,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1125208773}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5c557caa49336a84da33100299c2aaa8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   items: []
-  armorTest: {fileID: 11400000, guid: 5c81909a75655414fabf26996a4f53e2, type: 2}
 --- !u!114 &1125208783
 MonoBehaviour:
   m_ObjectHideFlags: 0

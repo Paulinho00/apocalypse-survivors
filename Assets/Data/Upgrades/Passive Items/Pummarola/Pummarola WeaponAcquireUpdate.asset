@@ -10,12 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0d58c40370ae5164294fc5198c0cab81, type: 3}
-  m_Name: Whip Upgrade (Fast Attack)
+  m_Name: Pummarola WeaponAcquireUpdate
   m_EditorClassIdentifier: 
-  upgradeType: 0
-  Name: Whip (Fast Attack)
-  icon: {fileID: 21300000, guid: 70872f7b7e491bd4b917ea1a6ee396bd, type: 3}
-  weaponData: {fileID: 11400000, guid: 2ca201f1850b4c9479966a60d4875d4d, type: 2}
+  upgradeType: 3
+  Name: Pummarola (Unlock)
+  icon: {fileID: 21300000, guid: bb64b660bd11aa941ad4ca0b78daf014, type: 3}
+  weaponData: {fileID: 0}
   weaponUpgradeStats:
     damage: 0
-    timeToAttack: -1
+    timeToAttack: 0
+    numberOfAttacks: 0
+  item: {fileID: 11400000, guid: feac3b2edb9add343bcf2b5a9857dc46, type: 2}
+  itemStats:
+    armor: 0
+    regenerationRate: 1
