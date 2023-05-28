@@ -1303,7 +1303,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0bdab7154c14304faa6050bc3b53b93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy: {fileID: 878957795727202331, guid: 2ef16490144726944b14f142d3ffd1e7, type: 3}
+  enemy: {fileID: 5904725319618324915, guid: 38d99b9a89e50c74c8d5490620ab2dd4, type: 3}
+  enemyAnimation: {fileID: 1074994835400123717, guid: e65d048e09781384d9b5012a4b46d67e, type: 3}
   spawnArea: {x: 10, y: 8}
   spawnTimer: 2
 --- !u!4 &655438403
