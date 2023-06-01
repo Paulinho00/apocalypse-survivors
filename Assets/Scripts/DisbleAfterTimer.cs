@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class DisbleAfterTimer : MonoBehaviour
 {
-    float timeToDisable = 0.8f;
+    float timeToDisable = 0.2f;
     float timer;
 
     private void OnEnable()

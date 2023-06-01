@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class WorldScrolling : MonoBehaviour
 {
-    [SerializeField] Transform playerTransform;
+    Transform playerTransform;
     Vector2Int currentTilePosition = new Vector2Int(0, 0);
     [SerializeField] Vector2Int playerTilePosition;
     Vector2Int onTileGridPlayerPosition;
@@ -21,6 +21,7 @@ public class WorldScrolling : MonoBehaviour
     private void Awake()
     {
         terrainTiles = new GameObject[terrainTileHorizontalCount, terrainTileVerticalCount];
+        playerTransform = GameManager.instance.playerTransform;
     }
 
     private void Update()
